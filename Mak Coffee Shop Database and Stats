@@ -1,0 +1,22 @@
+--Create a Coffee Shop Menu
+
+CREATE TABLE makcoffee (id INTEGER PRIMARY KEY, type TEXT, size TEXT, price TEXT);
+INSERT INTO makcoffee VALUES (1, "iced coffee", "M", "$5.95");
+INSERT INTO makcoffee VALUES (2, "hot coffee", "S", "$2.56");
+INSERT INTO makcoffee VALUES (3, "latte", "LG", "$6.75");
+INSERT INTO makcoffee VALUES (4, "coffee", "S", "$1.00");
+INSERT INTO makcoffee VALUES (5, "drinks", "M", "$4");
+INSERT INTO makcoffee VALUES (6, "espresso", "LG", "$7.89");
+INSERT INTO makcoffee VALUES (7, "americano", "M", "$5.65");
+INSERT INTO makcoffee VALUES (8, "tea", "mini", "$2.99");
+INSERT INTO makcoffee VALUES (9, "hot choc.", "Sm", "$1.99");
+INSERT INTO makcoffee VALUES (10, "water", "any", "$1.00");
+INSERT INTO makcoffee VALUES (11, "XYZ", "any", "$2.00");
+INSERT INTO makcoffee VALUES (12, "drink", "any", "$5");
+INSERT INTO makcoffee VALUES (13, "soda", "can", "$4");
+INSERT INTO makcoffee VALUES (14, "milk", "any", "$2.99");
+INSERT INTO makcoffee VALUES (15, "topo chico", "bottle", "$1.00");
+
+--Order by price 
+SELECT * FROM makcoffee ORDER BY price;
+SELECT AVG(price) FROM makcoffee
